@@ -21,6 +21,7 @@ REQUIRE_GO_VERSION = $(GO_VERSION)
 
 export GO111MODULE = on
 
+
 # process build tags
 
 build_tags = netgo

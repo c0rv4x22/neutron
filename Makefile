@@ -11,6 +11,7 @@ GO_VERSION=1.22
 GOLANGCI_LINT_VERSION=v1.55.2
 BUILDDIR ?= $(CURDIR)/build
 
+
 # for dockerized protobuf tools
 DOCKER := $(shell which docker)
 BUILDDIR ?= $(CURDIR)/build

